@@ -7,7 +7,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-    <link rel="Icon" type="jpg" href="jpg">
+  <link rel="icon" type="image/jpg" href="images/logozfvi.jpg">
+  <!-- Library untuk generate PDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <body>
   <header class="main-header">
@@ -39,12 +42,51 @@
       </div>
       
       <div class="row g-4" id="product-list">
-        <!-- Produk 1 -->
-        <div class="col-lg-4 col-md-6 mb-4">
+        <!-- Produk 1 - Smartphone X1 Pro -->
+        <div class="col-md-4">
+          <a href="shop.html#product-list" class="product-preview-card">
+            <div class="card h-100">
+              <div class="position-relative">
+                <img src="images/Produk 1.jpg" alt="Smartphone X1 Pro" class="card-img-top">
+                <span class="discount-badge">12% OFF</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Smartphone X1 Pro</h5>
+                <div class="star-rating mb-2 text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span class="text-muted ms-1">4.8</span>
+                </div>
+                <div class="features mb-3">
+                  <h6 class="text-primary">Fitur:</h6>
+                  <ul class="list-unstyled">
+                    <li><i class="fas fa-check-circle text-success me-2"></i>6.7" AMOLED Display</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i>Snapdragon 888</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i>108MP Camera</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i>5000mAh Battery</li>
+                  </ul>
+                </div>
+                <p class="card-text text-muted">Smartphone flagship dengan kamera 108MP dan layar AMOLED 120Hz.</p>
+                <div class="mt-auto">
+                  <p class="text-decoration-line-through text-muted mb-1">Rp 3,999,000</p>
+                  <p class="price fw-bold">Rp 3,499,000</p>
+                  <button class="btn btn-primary w-100 add-to-cart" data-id="1" data-name="Smartphone X1 Pro" data-price="3499000" data-img="images/Produk 1.jpg">
+                    Tambah ke Keranjang
+                  </button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- <div class="col-lg-4 col-md-6 mb-4">
           <div class="card product-card h-100">
             <div class="position-relative">
               <div class="product-image">
-                <img src="images/HPZFVI.jpg" alt="Smartphone X1 Pro" class="img-fluid">
+                <img src="images/Produk 1.jpg" alt="Smartphone X1 Pro" class="card-img-top">
+
               </div>
               <span class="discount-badge">12% OFF</span>
             </div>
@@ -76,364 +118,307 @@
               <div class="mt-auto">
                 <p class="text-decoration-line-through text-muted mb-1">Rp 3,999,000</p>
                 <p class="price fw-bold">Rp 3,499,000</p>
-                <button class="btn btn-primary w-100 add-to-cart" data-id="1" data-name="Smartphone X1 Pro" data-price="3499000" data-img="https://via.placeholder.com/300x300?text=Smartphone+X1+Pro">
+                <button class="btn btn-primary w-100 add-to-cart" data-id="1" data-name="Smartphone X1 Pro" data-price="3499000" data-img="images/Produk 1.jpg">
                   Tambah ke Keranjang
                 </button>
               </div>
             </div>
           </div>
+        </div> -->
+
+        <!-- Produk 2 - Wireless Headphones Elite -->
+        <div class="col-md-4">
+          <a href="shop.html#product-list" class="product-preview-card">
+            <div class="card h-100">
+              <div class="position-relative">
+                <img src="images/Produk 2.jpg" alt="Wireless Headphones Elite" class="card-img-top">
+                <span class="discount-badge">18% OFF</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Wireless Headphones Elite</h5>
+                <div class="star-rating mb-2 text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="text-muted ms-1">3.0</span>
+                </div>
+                <div class="features mb-3">
+                  <h6 class="text-primary">Fitur:</h6>
+                  <ul class="list-unstyled">
+                    <li><i class="fas fa-check-circle text-success me-2"></i>Active noise cancelling</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i>30hr Battery</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i>Bluetooth 5.0</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i>Built-in Mic</li>
+                  </ul>
+                </div>
+                <p class="card-text text-muted">Headphone nirkabel dengan ANC dan baterai 30 jam.</p>
+                <div class="mt-auto">
+                  <p class="text-decoration-line-through text-muted mb-1">Rp 1,599,000</p>
+                  <p class="price fw-bold">Rp 1,299,000</p>
+                  <button class="btn btn-primary w-100 add-to-cart" data-id="2" data-name="Wireless Headphones Elite" data-price="1299000" data-img="images/Produk 2.jpg">
+                    Tambah ke Keranjang
+                  </button>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
 
-        <!-- Produk 2 -->
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card product-card h-100">
-            <div class="position-relative">
-              <div class="product-image">
-                <img src="images/HeadphoneZFVI.jpg" alt="Wireless Headphones Elite" class="img-fluid">
+        <!-- Produk 3 - Smartwatch Pro 3 -->
+       <div class="col-md-4">
+          <a href="shop.html#product-list" class="product-preview-card">
+            <div class="card h-100">
+              <div class="position-relative">
+                <img src="images/Produk 3.jpg" alt="Smartwatch Pro 3" class="card-img-top">
               </div>
-              <span class="discount-badge">18% OFF</span>
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start mb-2">
-                <h5 class="card-title mb-0">Wireless Headphones Elite</h5>
-                <span class="badge bg-primary">Stok: 8</span>
-              </div>
-              <div class="star-rating mb-2 text-warning">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <span class="text-muted ms-1">4.6</span>
-              </div>
-              <p class="card-text text-muted flex-grow-1">Headphone nirkabel dengan ANC dan baterai 30 jam.</p>
-              
-              <div class="features mb-3">
-                <h6 class="text-primary">Fitur:</h6>
-                <ul class="list-unstyled">
-                  <li><i class="fas fa-check-circle text-success me-2"></i>Active Noise Cancelling</li>
-                  <li><i class="fas fa-check-circle text-success me-2"></i>30hr Battery</li>
-                  <li><i class="fas fa-check-circle text-success me-2"></i>Bluetooth 5.0</li>
-                  <li><i class="fas fa-check-circle text-success me-2"></i>Built-in Mic</li>
-                </ul>
-              </div>
-              
-              <div class="mt-auto">
-                <p class="text-decoration-line-through text-muted mb-1">Rp 1,599,000</p>
-                <p class="price fw-bold">Rp 1,299,000</p>
-                <button class="btn btn-primary w-100 add-to-cart" data-id="2" data-name="Wireless Headphones Elite" data-price="1299000" data-img="https://via.placeholder.com/300x300?text=Wireless+Headphones">
-                  Tambah ke Keranjang
-                </button>
+              <div class="card-body">
+                <h5 class="card-title">Smartwatch Pro 3</h5>
+                <div class="star-rating mb-2 text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="text-muted ms-1">4.0</span>
+                </div>
+                <div class="features mb-3">
+                  <h6 class="text-primary">Fitur:</h6>
+                  <ul class="list-unstyled">
+                    <li><i class="fas fa-check-circle text-success me-2"></i>Heart rate monitor</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i>GPS tracking</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i>7-day battery</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i>Waterproof</li>
+                  </ul>
+                </div>
+                <p class="card-text text-muted">Smartwatch dengan monitor detak jantung dan GPS built-in.</p>
+                <div class="mt-auto">
+                  <p class="price fw-bold">Rp 1,899,000</p>
+                  <button class="btn btn-primary w-100 add-to-cart" data-id="3" data-name="Smartwatch Pro 3" data-price="1899000" data-img="images/Produk 3.jpg">
+                    Tambah ke Keranjang
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
 
-        <!-- Produk 3 -->
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card product-card h-100">
-            <div class="position-relative">
-              <div class="product-image">
-                <img src="images/JamZFVI.jpg" alt="Smartwatch Pro 3" class="img-fluid">
+        <!-- Produk 4 - Mesin Cuci Smart Front Load -->
+        <div class="col-md-4">
+          <a href="shop.html#product-list" class="product-preview-card">
+            <div class="card h-100">
+              <div class="position-relative">
+                <img src="images/Produk 4.jpeg" alt="Mesin Cuci Smart Front Load" class="card-img-top">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Mesin Cuci Smart Front Load</h5>
+                <div class="star-rating mb-2 text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="text-muted ms-1">4.0</span>
+                </div>
+                <div class="features mb-3">
+                  <h6 class="text-primary">Fitur:</h6>
+                  <ul class="list-unstyled">
+                    <li><i class="fas fa-check-circle text-success me-2"></i>Kapasitas 8kg</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i>Smart AI technology</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i>Inverter motor</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i>15 program cuci</li>
+                  </ul>
+                </div>
+                <p class="card-text text-muted">Mesin Cuci Smart Front Load kapasitas 8kg dengan teknologi AI dan penghemat energi.</p>
+                <div class="mt-auto">
+                  <p class="price fw-bold">Rp 5,949,000</p>
+                  <button class="btn btn-primary w-100 add-to-cart" data-id="4" data-name=" Mesin Cuci Smart Front Load" data-price="5949000" data-img="images/Produk 4.jpeg">
+                    Tambah ke Keranjang
+                  </button>
+                </div>
               </div>
             </div>
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start mb-2">
-                <h5 class="card-title mb-0">Smartwatch Pro 3</h5>
-                <span class="badge bg-primary">Stok: 12</span>
-              </div>
-              <div class="star-rating mb-2 text-warning">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-                <span class="text-muted ms-1">4.5</span>
-              </div>
-              <p class="card-text text-muted flex-grow-1">Smartwatch dengan monitor detak jantung dan GPS built-in.</p>
-              
-              <div class="features mb-3">
-                <h6 class="text-primary">Fitur:</h6>
-                <ul class="list-unstyled">
-                  <li><i class="fas fa-check-circle text-success me-2"></i>Heart Rate Monitor</li>
-                  <li><i class="fas fa-check-circle text-success me-2"></i>GPS Tracking</li>
-                  <li><i class="fas fa-check-circle text-success me-2"></i>7-day Battery</li>
-                  <li><i class="fas fa-check-circle text-success me-2"></i>Waterproof</li>
-                </ul>
-              </div>
-              
-              <div class="mt-auto">
-                <p class="price fw-bold">Rp 1,899,000</p>
-                <button class="btn btn-primary w-100 add-to-cart" data-id="3" data-name="Smartwatch Pro 3" data-price="1899000" data-img="https://via.placeholder.com/300x300?text=Smartwatch+Pro+3">
-                  Tambah ke Keranjang
-                </button>
-              </div>
-            </div>
-          </div>
+          </a>
         </div>
 
-         <!-- Produk 4 -->
-         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card product-card h-100">
-            <div class="position-relative">
-              <div class="product-image">
-                <img src="https://via.placeholder.com/300x300?text=Smartphone+X1+Pro" alt="Smartphone X1 Pro" class="img-fluid">
+        <!-- Produk 5 - Charger Fast Charging -->
+        <div class="col-md-4">
+          <a href="shop.html#product-list" class="product-preview-card">
+            <div class="card h-100">
+              <div class="position-relative">
+                <img src="images/Produk 5.jpeg" alt="Charger Fast Charging" class="card-img-top">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Charger Fast Charging</h5>
+                <div class="star-rating mb-2 text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span class="text-muted ms-1">3.5</span>
+                </div>
+                <div class="features mb-3">
+                  <h6 class="text-primary">Fitur:</h6>
+                  <ul class="list-unstyled">
+                    <li><i class="fas fa-check-circle text-success me-2"></i>100 Watt</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i>Fast charging</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i>Dual port</li>
+                  </ul>
+                </div>
+                <p class="card-text text-muted">Charger dengan teknologi paling terbaru.</p>
+                <div class="mt-auto">
+                  <p class="price fw-bold">Rp 300,899</p>
+                  <button class="btn btn-primary w-100 add-to-cart" data-id="5" data-name="Charger Fast Charging" data-price="300899" data-img="images/Produk 5.jpeg">
+                    Tambah ke Keranjang
+                  </button>
+                </div>
               </div>
             </div>
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start mb-2">
-                <h5 class="card-title mb-0">Washing machine</h5>
-                <span class="badge bg-primary">Stok: 69</span>
-              </div>
-              <div class="star-rating mb-2 text-warning">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-                <span class="text-muted ms-1">4.5</span>
-              </div>
-              <p class="card-text text-muted flex-grow-1">Smartphone flagship dengan kamera 108MP dan layar AMOLED 120Hz.</p>
-              
-              <div class="features mb-3">
-                <h6 class="text-primary">Fitur:</h6>
-                <ul class="list-unstyled">
-                  <li><i class="fas fa-check-circle text-success me-2"></i>Bersih</li>
-                  <li><i class="fas fa-check-circle text-success me-2"></i>Cepat</li>
-                </ul>
-              </div>
-              
-              <div class="mt-auto">
-                <p class="price fw-bold">Rp 9,479,000</p>
-                <button class="btn btn-primary w-100 add-to-cart" data-id="1" data-name="Smartphone X1 Pro" data-price="9479000" data-img="https://via.placeholder.com/300x300?text=Smartphone+X1+Pro">
-                  Tambah ke Keranjang
-                </button>
-              </div>
-            </div>
-          </div>
+          </a>
         </div>
 
-        <!-- Produk 5 -->
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card product-card h-100">
-            <div class="position-relative">
-              <div class="product-image">
-                <img src="https://via.placeholder.com/300x300?text=Wireless+Headphones" alt="Wireless Headphones Elite" class="img-fluid">
+        <!-- Produk 6 - Laptop P454 -->
+        <div class="col-md-4">
+          <a href="shop.html#product-list" class="product-preview-card">
+            <div class="card h-100">
+              <div class="position-relative">
+                <img src="images/Produk 6.jpeg" alt="Laptop P454" class="card-img-top">
               </div>
-              <span class="discount-badge">18% OFF</span>
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start mb-2">
-                <h5 class="card-title mb-0">Wireless Headphones Elite</h5>
-                <span class="badge bg-primary">Stok: 8</span>
-              </div>
-              <div class="star-rating mb-2 text-warning">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <span class="text-muted ms-1">4.6</span>
-              </div>
-              <p class="card-text text-muted flex-grow-1">Headphone nirkabel dengan ANC dan baterai 30 jam.</p>
-              
-              <div class="features mb-3">
-                <h6 class="text-primary">Fitur:</h6>
-                <ul class="list-unstyled">
-                  <li><i class="fas fa-check-circle text-success me-2"></i>Active Noise Cancelling</li>
-                  <li><i class="fas fa-check-circle text-success me-2"></i>30hr Battery</li>
-                  <li><i class="fas fa-check-circle text-success me-2"></i>Bluetooth 5.0</li>
-                  <li><i class="fas fa-check-circle text-success me-2"></i>Built-in Mic</li>
-                </ul>
-              </div>
-              
-              <div class="mt-auto">
-                <p class="text-decoration-line-through text-muted mb-1">Rp 1,599,000</p>
-                <p class="price fw-bold">Rp 1,299,000</p>
-                <button class="btn btn-primary w-100 add-to-cart" data-id="2" data-name="Wireless Headphones Elite" data-price="1299000" data-img="https://via.placeholder.com/300x300?text=Wireless+Headphones">
-                  Tambah ke Keranjang
-                </button>
+              <div class="card-body">
+                <h5 class="card-title">Laptop P454</h5>
+                <div class="star-rating mb-2 text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="text-muted ms-1">5.0</span>
+                </div>
+                <div class="features mb-3">
+                  <h6 class="text-primary">Fitur:</h6>
+                  <ul class="list-unstyled">
+                    <li><i class="fas fa-check-circle text-success me-2"></i>ADM 400</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i>Amoled screen</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i>SSD 8 TB</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i>100hr battery</li>
+                  </ul>
+                </div>
+                <p class="card-text text-muted">Laptop dengan segala keunggulannya.</p>
+                <div class="mt-auto">
+                  <p class="price fw-bold">Rp 40,899,000</p>
+                  <button class="btn btn-primary w-100 add-to-cart" data-id="6" data-name="Laptop P454" data-price="40899000" data-img="images/Produk 6.jpeg">
+                    Tambah ke Keranjang
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
 
-        <!-- Produk 6 -->
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card product-card h-100">
-            <div class="position-relative">
-              <div class="product-image">
-                <img src="https://via.placeholder.com/300x300?text=Smartwatch+Pro+3" alt="Smartwatch Pro 3" class="img-fluid">
+        <!-- Produk 7 - Keyboard XX400 -->
+        <div class="col-md-4">
+          <a href="shop.html#product-list" class="product-preview-card">
+            <div class="card h-100">
+              <div class="position-relative">
+                <img src="images/Produk 7.jpeg" alt="Keyboard XX400" class="card-img-top">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Keyboard XX400</h5>
+                <div class="star-rating mb-2 text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="text-muted ms-1">3.0</span>
+                </div>
+                <div class="features mb-3">
+                  <h6 class="text-primary">Fitur:</h6>
+                  <ul class="list-unstyled">
+                    <li><i class="fas fa-check-circle text-success me-2"></i>Zero noise</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i>RGB</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i>1 Million clicks</li>
+                  </ul>
+                </div>
+                <p class="card-text text-muted">Keyboard 2 fitur Unggulan dengan sentuhan RGB.</p>
+                <div class="mt-auto">
+                  <p class="price fw-bold">Rp 1,690,000</p>
+                  <button class="btn btn-primary w-100 add-to-cart" data-id="7" data-name="Keyboard XX400" data-price="1690000" data-img="images/Produk 7.jpeg">
+                    Tambah ke Keranjang
+                  </button>
+                </div>
               </div>
             </div>
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start mb-2">
-                <h5 class="card-title mb-0">Smartwatch Pro 3</h5>
-                <span class="badge bg-primary">Stok: 12</span>
-              </div>
-              <div class="star-rating mb-2 text-warning">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-                <span class="text-muted ms-1">4.5</span>
-              </div>
-              <p class="card-text text-muted flex-grow-1">Smartwatch dengan monitor detak jantung dan GPS built-in.</p>
-              
-              <div class="features mb-3">
-                <h6 class="text-primary">Fitur:</h6>
-                <ul class="list-unstyled">
-                  <li><i class="fas fa-check-circle text-success me-2"></i>Heart Rate Monitor</li>
-                  <li><i class="fas fa-check-circle text-success me-2"></i>GPS Tracking</li>
-                  <li><i class="fas fa-check-circle text-success me-2"></i>7-day Battery</li>
-                  <li><i class="fas fa-check-circle text-success me-2"></i>Waterproof</li>
-                </ul>
-              </div>
-              
-              <div class="mt-auto">
-                <p class="price fw-bold">Rp 1,899,000</p>
-                <button class="btn btn-primary w-100 add-to-cart" data-id="3" data-name="Smartwatch Pro 3" data-price="1899000" data-img="https://via.placeholder.com/300x300?text=Smartwatch+Pro+3">
-                  Tambah ke Keranjang
-                </button>
-              </div>
-            </div>
-          </div>
+          </a>
         </div>
 
-         <!-- Produk 7 -->
-         <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card product-card h-100">
-            <div class="position-relative">
-              <div class="product-image">
-                <img src="https://via.placeholder.com/300x300?text=Smartphone+X1+Pro" alt="Smartphone X1 Pro" class="img-fluid">
+        <!-- Produk 8 - Mouse ANT -->
+        <div class="col-md-4">
+          <a href="shop.html#product-list" class="product-preview-card">
+            <div class="card h-100">
+              <div class="position-relative">
+                <img src="images/Produk 8.jpeg" alt="Mouse ANT" class="card-img-top">
               </div>
-              <span class="discount-badge">12% OFF</span>
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start mb-2">
-                <h5 class="card-title mb-0">Smartphone X1 Pro</h5>
-                <span class="badge bg-primary">Stok: 15</span>
-              </div>
-              <div class="star-rating mb-2 text-warning">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-                <span class="text-muted ms-1">4.8</span>
-              </div>
-              <p class="card-text text-muted flex-grow-1">Smartphone flagship dengan kamera 108MP dan layar AMOLED 120Hz.</p>
-              
-              <div class="features mb-3">
-                <h6 class="text-primary">Fitur:</h6>
-                <ul class="list-unstyled">
-                  <li><i class="fas fa-check-circle text-success me-2"></i>6.7" AMOLED Display</li>
-                  <li><i class="fas fa-check-circle text-success me-2"></i>Snapdragon 888</li>
-                  <li><i class="fas fa-check-circle text-success me-2"></i>108MP Camera</li>
-                  <li><i class="fas fa-check-circle text-success me-2"></i>5000mAh Battery</li>
-                </ul>
-              </div>
-              
-              <div class="mt-auto">
-                <p class="text-decoration-line-through text-muted mb-1">Rp 3,999,000</p>
-                <p class="price fw-bold">Rp 3,499,000</p>
-                <button class="btn btn-primary w-100 add-to-cart" data-id="1" data-name="Smartphone X1 Pro" data-price="3499000" data-img="https://via.placeholder.com/300x300?text=Smartphone+X1+Pro">
-                  Tambah ke Keranjang
-                </button>
+              <div class="card-body">
+                <h5 class="card-title">Mouse ANT</h5>
+                <div class="star-rating mb-2 text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="text-muted ms-1">3.0</span>
+                </div>
+                <div class="features mb-3">
+                  <h6 class="text-primary">Fitur:</h6>
+                  <ul class="list-unstyled">
+                    <li><i class="fas fa-check-circle text-success me-2"></i>Smooth click</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i>Wireless with bluetooth</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i>3-day battery</li>
+                  </ul>
+                </div>
+                <p class="card-text text-muted">Mouse dengan pengecasan efektif dan tidak sering.</p>
+                <div class="mt-auto">
+                  <p class="price fw-bold">Rp 4,666,000</p>
+                  <button class="btn btn-primary w-100 add-to-cart" data-id="8" data-name=" Mouse ANT" data-price="4666000" data-img="images/Produk 8.jpeg">
+                    Tambah ke Keranjang
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
 
-        <!-- Produk 8 -->
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card product-card h-100">
-            <div class="position-relative">
-              <div class="product-image">
-                <img src="https://via.placeholder.com/300x300?text=Wireless+Headphones" alt="Wireless Headphones Elite" class="img-fluid">
+        <!-- Produk 9 - Monitor ultra x -->
+        <div class="col-md-4">
+          <a href="shop.html#product-list" class="product-preview-card">
+            <div class="card h-100">
+              <div class="position-relative">
+                <img src="images/Produk 9.jpeg" alt="Monitor ultra x" class="card-img-top">
               </div>
-              <span class="discount-badge">18% OFF</span>
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start mb-2">
-                <h5 class="card-title mb-0">Wireless Headphones Elite</h5>
-                <span class="badge bg-primary">Stok: 8</span>
-              </div>
-              <div class="star-rating mb-2 text-warning">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <span class="text-muted ms-1">4.6</span>
-              </div>
-              <p class="card-text text-muted flex-grow-1">Headphone nirkabel dengan ANC dan baterai 30 jam.</p>
-              
-              <div class="features mb-3">
-                <h6 class="text-primary">Fitur:</h6>
-                <ul class="list-unstyled">
-                  <li><i class="fas fa-check-circle text-success me-2"></i>Active Noise Cancelling</li>
-                  <li><i class="fas fa-check-circle text-success me-2"></i>30hr Battery</li>
-                  <li><i class="fas fa-check-circle text-success me-2"></i>Bluetooth 5.0</li>
-                  <li><i class="fas fa-check-circle text-success me-2"></i>Built-in Mic</li>
-                </ul>
-              </div>
-              
-              <div class="mt-auto">
-                <p class="text-decoration-line-through text-muted mb-1">Rp 1,599,000</p>
-                <p class="price fw-bold">Rp 1,299,000</p>
-                <button class="btn btn-primary w-100 add-to-cart" data-id="2" data-name="Wireless Headphones Elite" data-price="1299000" data-img="https://via.placeholder.com/300x300?text=Wireless+Headphones">
-                  Tambah ke Keranjang
-                </button>
+              <div class="card-body">
+                <h5 class="card-title">Monitor ultra x</h5>
+                <div class="star-rating mb-2 text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="text-muted ms-1">5.0</span>
+                </div>
+                <div class="features mb-3">
+                  <h6 class="text-primary">Fitur:</h6>
+                  <ul class="list-unstyled">
+                    <li><i class="fas fa-check-circle text-success me-2"></i>Amoled screen</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i>Smart AI</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i>Slim port</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i>Dolby atmos</li>
+                  </ul>
+                </div>
+                <p class="card-text text-muted">Monitor amoled dengan Ai mutakhir.</p>
+                <div class="mt-auto">
+                  <p class="price fw-bold">Rp 9,000,000</p>
+                  <button class="btn btn-primary w-100 add-to-cart" data-id="9" data-name="Monitor ultra x" data-price="9000000" data-img="images/Produk 9.jpeg">
+                    Tambah ke Keranjang
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
-
-        <!-- Produk 9 -->
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card product-card h-100">
-            <div class="position-relative">
-              <div class="product-image">
-                <img src="https://via.placeholder.com/300x300?text=Smartwatch+Pro+3" alt="Smartwatch Pro 3" class="img-fluid">
-              </div>
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start mb-2">
-                <h5 class="card-title mb-0">Smartwatch Pro 3</h5>
-                <span class="badge bg-primary">Stok: 12</span>
-              </div>
-              <div class="star-rating mb-2 text-warning">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-                <span class="text-muted ms-1">4.5</span>
-              </div>
-              <p class="card-text text-muted flex-grow-1">Smartwatch dengan monitor detak jantung dan GPS built-in.</p>
-              
-              <div class="features mb-3">
-                <h6 class="text-primary">Fitur:</h6>
-                <ul class="list-unstyled">
-                  <li><i class="fas fa-check-circle text-success me-2"></i>Heart Rate Monitor</li>
-                  <li><i class="fas fa-check-circle text-success me-2"></i>GPS Tracking</li>
-                  <li><i class="fas fa-check-circle text-success me-2"></i>7-day Battery</li>
-                  <li><i class="fas fa-check-circle text-success me-2"></i>Waterproof</li>
-                </ul>
-              </div>
-              
-              <div class="mt-auto">
-                <p class="price fw-bold">Rp 1,899,000</p>
-                <button class="btn btn-primary w-100 add-to-cart" data-id="3" data-name="Smartwatch Pro 3" data-price="1899000" data-img="https://via.placeholder.com/300x300?text=Smartwatch+Pro+3">
-                  Tambah ke Keranjang
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <section class="shopping-cart-section">
@@ -533,7 +518,7 @@
           <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
             <i class="fas fa-home me-2"></i>Kembali ke Beranda
           </button>
-          <a href="#" class="btn btn-outline-primary">
+          <a href="#" class="btn btn-outline-primary" id="view-invoice">
             <i class="fas fa-file-alt me-2"></i>Lihat Invoice
           </a>
         </div>
@@ -574,7 +559,127 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // Sistem Keranjang Belanja
+    // Fungsi untuk format mata uang (global)
+    window.formatCurrency = function(value) {
+      return new Intl.NumberFormat('id-ID', { 
+        style: 'currency', 
+        currency: 'IDR',
+        maximumFractionDigits: 0
+      }).format(value);
+    };
+
+    // Fungsi untuk generate invoice PDF
+    function generateInvoicePDF(orderNumber) {
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF();
+      
+      // Cari order dari history
+      const orderHistory = JSON.parse(localStorage.getItem('orderHistory')) || [];
+      const order = orderHistory.find(o => o.orderNumber === orderNumber);
+      
+      if (!order) {
+        showAlert('Data pesanan tidak ditemukan', 'danger');
+        return;
+      }
+      
+      // Buat konten invoice
+      let yPos = 20;
+      
+      // Header
+      doc.setFontSize(20);
+      doc.setTextColor(40);
+      doc.text('ZFVI Elektronik', 105, yPos, { align: 'center' });
+      yPos += 10;
+      
+      doc.setFontSize(12);
+      doc.setTextColor(100);
+      doc.text('Jl. Elektronik No. 123, Jakarta', 105, yPos, { align: 'center' });
+      yPos += 5;
+      doc.text('Telp: (021) 12345678 | WhatsApp: +62 812 3456 7890', 105, yPos, { align: 'center' });
+      yPos += 15;
+      
+      // Judul Invoice
+      doc.setFontSize(16);
+      doc.setTextColor(40);
+      doc.text('INVOICE PEMBELIAN', 105, yPos, { align: 'center' });
+      yPos += 10;
+      
+      // Info Invoice
+      doc.setFontSize(10);
+      doc.text(`No. Invoice: ${order.orderNumber}`, 14, yPos);
+      doc.text(`Tanggal: ${order.orderDate}`, 14, yPos + 5);
+      yPos += 15;
+      
+      // Info Pelanggan
+      doc.setFontSize(12);
+      doc.setTextColor(40);
+      doc.text('Informasi Pelanggan:', 14, yPos);
+      yPos += 7;
+      
+      doc.setFontSize(10);
+      doc.text(`Nama: ${order.customer.name}`, 20, yPos);
+      yPos += 5;
+      doc.text(`No. Telp: ${order.customer.phone}`, 20, yPos);
+      yPos += 5;
+      doc.text(`Alamat: ${order.customer.address}`, 20, yPos);
+      yPos += 10;
+      
+      // Daftar Produk
+      doc.setFontSize(12);
+      doc.setTextColor(40);
+      doc.text('Detail Pembelian:', 14, yPos);
+      yPos += 7;
+      
+      // Header tabel
+      doc.setFillColor(200);
+      doc.rect(14, yPos, 182, 7, 'F');
+      doc.setTextColor(40);
+      doc.setFontSize(10);
+      doc.text('No', 16, yPos + 5);
+      doc.text('Produk', 26, yPos + 5);
+      doc.text('Harga', 130, yPos + 5, { align: 'right' });
+      doc.text('Qty', 150, yPos + 5, { align: 'right' });
+      doc.text('Subtotal', 180, yPos + 5, { align: 'right' });
+      yPos += 7;
+      
+      // Isi tabel
+      order.items.forEach((item, index) => {
+        doc.text((index + 1).toString(), 16, yPos + 5);
+        doc.text(item.name, 26, yPos + 5);
+        doc.text(formatCurrency(item.price), 130, yPos + 5, { align: 'right' });
+        doc.text(item.quantity.toString(), 150, yPos + 5, { align: 'right' });
+        doc.text(formatCurrency(item.price * item.quantity), 180, yPos + 5, { align: 'right' });
+        yPos += 7;
+      });
+      
+      yPos += 5;
+      
+      // Summary
+      doc.text(`Subtotal: ${formatCurrency(order.subtotal)}`, 180, yPos, { align: 'right' });
+      yPos += 5;
+      doc.text(`Ongkos Kirim: ${formatCurrency(order.shipping.cost)}`, 180, yPos, { align: 'right' });
+      yPos += 5;
+      doc.setFontSize(11);
+      doc.text(`Total: ${formatCurrency(order.total)}`, 180, yPos, { align: 'right' });
+      yPos += 10;
+      
+      // Catatan
+      if (order.notes) {
+        doc.setFontSize(10);
+        doc.text(`Catatan: ${order.notes}`, 14, yPos);
+        yPos += 10;
+      }
+      
+      // Footer
+      doc.setFontSize(8);
+      doc.setTextColor(100);
+      doc.text('Terima kasih telah berbelanja di ZFVI Elektronik', 105, 280, { align: 'center' });
+      doc.text('Barang yang sudah dibeli tidak dapat dikembalikan kecuali ada kerusakan', 105, 285, { align: 'center' });
+      
+      // Simpan PDF
+      doc.save(`invoice_${orderNumber}.pdf`);
+    }
+
     document.addEventListener('DOMContentLoaded', function() {
       // Inisialisasi keranjang dari localStorage jika ada
       let cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -590,15 +695,6 @@
       function updateCartBadge() {
         const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
         document.querySelector('.cart-badge').textContent = totalItems;
-      }
-      
-      // Fungsi untuk format mata uang
-      function formatCurrency(value) {
-        return new Intl.NumberFormat('id-ID', { 
-          style: 'currency', 
-          currency: 'IDR',
-          maximumFractionDigits: 0
-        }).format(value);
       }
       
       // Fungsi untuk render keranjang
@@ -631,7 +727,7 @@
           cartHTML += `
             <div class="cart-item">
               <div class="d-flex align-items-center">
-                <img src="${item.image}" alt="${item.name}" class="cart-item-image me-3">
+                <img src="${item.image}" alt="${item.name}" class="cart-item-image img-fluid me-3">
                 <div class="cart-item-details">
                   <h6 class="cart-item-title">${item.name}</h6>
                   <p class="cart-item-price mb-2">${formatCurrency(item.price)}</p>
@@ -737,7 +833,7 @@
         showAlert(`Jumlah ${cart[index].name} diperbarui`, 'success');
       }
       
-            // Fungsi untuk hapus item dari keranjang
+      // Fungsi untuk hapus item dari keranjang
       function removeFromCart(index) {
         const removedItem = cart.splice(index, 1)[0];
         saveCart();
@@ -877,7 +973,7 @@
         
         // Tampilkan modal konfirmasi
         document.getElementById('estimated-delivery').textContent = `Estimasi Pengiriman: ${deliveryTime}`;
-        document.getElementById('order-number').textContent = orderNumber;
+        document.getElementById('order-number').textContent = orderNumber.split('-')[1];
         
         const modal = new bootstrap.Modal(document.getElementById('confirmationModal'));
         modal.show();
@@ -885,6 +981,13 @@
         // Kosongkan keranjang dan form
         clearCart();
         this.reset();
+      });
+      
+      // Event listener untuk tombol invoice
+      document.getElementById('view-invoice')?.addEventListener('click', function(e) {
+        e.preventDefault();
+        const orderNumber = 'ZFVI-' + document.getElementById('order-number').textContent;
+        generateInvoicePDF(orderNumber);
       });
       
       // Inisialisasi keranjang saat pertama kali load
