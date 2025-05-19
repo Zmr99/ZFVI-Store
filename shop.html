@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZFVI Elektronik</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+    <link rel="Icon" type="jpg" href="jpg">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container d-flex align-items-center justify-content-between py-3">
+      <a href="index.html" class="logo-link">
+        <img src="images/logozfvi.jpg" alt="ZFVI Logo" class="logo">
+        <h1 class="store-title">ZFVI-E</h1>
+      </a>
+      <div class="header-actions">
+        <a href="index.html" class="btn btn-outline-light me-2">
+          <i class="fas fa-home"></i>
+        </a>
+        <div class="cart-icon-container" id="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-badge">0</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mt-4">
+    <section class="product-catalog">
+      <div class="section-header">
+        <h2 class="section-title">Katalog Produk</h2>
+        <div class="search-box">
+          <input type="text" id="product-search" placeholder="Cari produk..." class="form-control">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+      
+      <div class="row g-4" id="product-list">
+        <!-- Produk 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card product-card h-100">
+            <div class="position-relative">
+              <div class="product-image">
+                <img src="images/HPZFVI.jpg" alt="Smartphone X1 Pro" class="img-fluid">
+              </div>
+              <span class="discount-badge">12% OFF</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title mb-0">Smartphone X1 Pro</h5>
+                <span class="badge bg-primary">Stok: 15</span>
+              </div>
+              <div class="star-rating mb-2 text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span class="text-muted ms-1">4.8</span>
+              </div>
+              <p class="card-text text-muted flex-grow-1">Smartphone flagship dengan kamera 108MP dan layar AMOLED 120Hz.</p>
+              
+              <div class="features mb-3">
+                <h6 class="text-primary">Fitur:</h6>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-check-circle text-success me-2"></i>6.7" AMOLED Display</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i>Snapdragon 888</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i>108MP Camera</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i>5000mAh Battery</li>
+                </ul>
+              </div>
+              
+              <div class="mt-auto">
+                <p class="text-decoration-line-through text-muted mb-1">Rp 3,999,000</p>
+                <p class="price fw-bold">Rp 3,499,000</p>
+                <button class="btn btn-primary w-100 add-to-cart" data-id="1" data-name="Smartphone X1 Pro" data-price="3499000" data-img="https://via.placeholder.com/300x300?text=Smartphone+X1+Pro">
+                  Tambah ke Keranjang
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card product-card h-100">
+            <div class="position-relative">
+              <div class="product-image">
+                <img src="images/HeadphoneZFVI.jpg" alt="Wireless Headphones Elite" class="img-fluid">
+              </div>
+              <span class="discount-badge">18% OFF</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title mb-0">Wireless Headphones Elite</h5>
+                <span class="badge bg-primary">Stok: 8</span>
+              </div>
+              <div class="star-rating mb-2 text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span class="text-muted ms-1">4.6</span>
+              </div>
+              <p class="card-text text-muted flex-grow-1">Headphone nirkabel dengan ANC dan baterai 30 jam.</p>
+              
+              <div class="features mb-3">
+                <h6 class="text-primary">Fitur:</h6>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-check-circle text-success me-2"></i>Active Noise Cancelling</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i>30hr Battery</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i>Bluetooth 5.0</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i>Built-in Mic</li>
+                </ul>
+              </div>
+              
+              <div class="mt-auto">
+                <p class="text-decoration-line-through text-muted mb-1">Rp 1,599,000</p>
+                <p class="price fw-bold">Rp 1,299,000</p>
+                <button class="btn btn-primary w-100 add-to-cart" data-id="2" data-name="Wireless Headphones Elite" data-price="1299000" data-img="https://via.placeholder.com/300x300?text=Wireless+Headphones">
+                  Tambah ke Keranjang
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card product-card h-100">
+            <div class="position-relative">
+              <div class="product-image">
+                <img src="images/JamZFVI.jpg" alt="Smartwatch Pro 3" class="img-fluid">
+              </div>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title mb-0">Smartwatch Pro 3</h5>
+                <span class="badge bg-primary">Stok: 12</span>
+              </div>
+              <div class="star-rating mb-2 text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span class="text-muted ms-1">4.5</span>
+              </div>
+              <p class="card-text text-muted flex-grow-1">Smartwatch dengan monitor detak jantung dan GPS built-in.</p>
+              
+              <div class="features mb-3">
+                <h6 class="text-primary">Fitur:</h6>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-check-circle text-success me-2"></i>Heart Rate Monitor</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i>GPS Tracking</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i>7-day Battery</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i>Waterproof</li>
+                </ul>
+              </div>
+              
+              <div class="mt-auto">
+                <p class="price fw-bold">Rp 1,899,000</p>
+                <button class="btn btn-primary w-100 add-to-cart" data-id="3" data-name="Smartwatch Pro 3" data-price="1899000" data-img="https://via.placeholder.com/300x300?text=Smartwatch+Pro+3">
+                  Tambah ke Keranjang
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!-- Produk 4 -->
+         <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card product-card h-100">
+            <div class="position-relative">
+              <div class="product-image">
+                <img src="https://via.placeholder.com/300x300?text=Smartphone+X1+Pro" alt="Smartphone X1 Pro" class="img-fluid">
+              </div>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title mb-0">Washing machine</h5>
+                <span class="badge bg-primary">Stok: 69</span>
+              </div>
+              <div class="star-rating mb-2 text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span class="text-muted ms-1">4.5</span>
+              </div>
+              <p class="card-text text-muted flex-grow-1">Smartphone flagship dengan kamera 108MP dan layar AMOLED 120Hz.</p>
+              
+              <div class="features mb-3">
+                <h6 class="text-primary">Fitur:</h6>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-check-circle text-success me-2"></i>Bersih</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i>Cepat</li>
+                </ul>
+              </div>
+              
+              <div class="mt-auto">
+                <p class="price fw-bold">Rp 9,479,000</p>
+                <button class="btn btn-primary w-100 add-to-cart" data-id="1" data-name="Smartphone X1 Pro" data-price="9479000" data-img="https://via.placeholder.com/300x300?text=Smartphone+X1+Pro">
+                  Tambah ke Keranjang
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 5 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card product-card h-100">
+            <div class="position-relative">
+              <div class="product-image">
+                <img src="https://via.placeholder.com/300x300?text=Wireless+Headphones" alt="Wireless Headphones Elite" class="img-fluid">
+              </div>
+              <span class="discount-badge">18% OFF</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title mb-0">Wireless Headphones Elite</h5>
+                <span class="badge bg-primary">Stok: 8</span>
+              </div>
+              <div class="star-rating mb-2 text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span class="text-muted ms-1">4.6</span>
+              </div>
+              <p class="card-text text-muted flex-grow-1">Headphone nirkabel dengan ANC dan baterai 30 jam.</p>
+              
+              <div class="features mb-3">
+                <h6 class="text-primary">Fitur:</h6>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-check-circle text-success me-2"></i>Active Noise Cancelling</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i>30hr Battery</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i>Bluetooth 5.0</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i>Built-in Mic</li>
+                </ul>
+              </div>
+              
+              <div class="mt-auto">
+                <p class="text-decoration-line-through text-muted mb-1">Rp 1,599,000</p>
+                <p class="price fw-bold">Rp 1,299,000</p>
+                <button class="btn btn-primary w-100 add-to-cart" data-id="2" data-name="Wireless Headphones Elite" data-price="1299000" data-img="https://via.placeholder.com/300x300?text=Wireless+Headphones">
+                  Tambah ke Keranjang
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 6 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card product-card h-100">
+            <div class="position-relative">
+              <div class="product-image">
+                <img src="https://via.placeholder.com/300x300?text=Smartwatch+Pro+3" alt="Smartwatch Pro 3" class="img-fluid">
+              </div>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title mb-0">Smartwatch Pro 3</h5>
+                <span class="badge bg-primary">Stok: 12</span>
+              </div>
+              <div class="star-rating mb-2 text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span class="text-muted ms-1">4.5</span>
+              </div>
+              <p class="card-text text-muted flex-grow-1">Smartwatch dengan monitor detak jantung dan GPS built-in.</p>
+              
+              <div class="features mb-3">
+                <h6 class="text-primary">Fitur:</h6>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-check-circle text-success me-2"></i>Heart Rate Monitor</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i>GPS Tracking</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i>7-day Battery</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i>Waterproof</li>
+                </ul>
+              </div>
+              
+              <div class="mt-auto">
+                <p class="price fw-bold">Rp 1,899,000</p>
+                <button class="btn btn-primary w-100 add-to-cart" data-id="3" data-name="Smartwatch Pro 3" data-price="1899000" data-img="https://via.placeholder.com/300x300?text=Smartwatch+Pro+3">
+                  Tambah ke Keranjang
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!-- Produk 7 -->
+         <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card product-card h-100">
+            <div class="position-relative">
+              <div class="product-image">
+                <img src="https://via.placeholder.com/300x300?text=Smartphone+X1+Pro" alt="Smartphone X1 Pro" class="img-fluid">
+              </div>
+              <span class="discount-badge">12% OFF</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title mb-0">Smartphone X1 Pro</h5>
+                <span class="badge bg-primary">Stok: 15</span>
+              </div>
+              <div class="star-rating mb-2 text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span class="text-muted ms-1">4.8</span>
+              </div>
+              <p class="card-text text-muted flex-grow-1">Smartphone flagship dengan kamera 108MP dan layar AMOLED 120Hz.</p>
+              
+              <div class="features mb-3">
+                <h6 class="text-primary">Fitur:</h6>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-check-circle text-success me-2"></i>6.7" AMOLED Display</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i>Snapdragon 888</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i>108MP Camera</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i>5000mAh Battery</li>
+                </ul>
+              </div>
+              
+              <div class="mt-auto">
+                <p class="text-decoration-line-through text-muted mb-1">Rp 3,999,000</p>
+                <p class="price fw-bold">Rp 3,499,000</p>
+                <button class="btn btn-primary w-100 add-to-cart" data-id="1" data-name="Smartphone X1 Pro" data-price="3499000" data-img="https://via.placeholder.com/300x300?text=Smartphone+X1+Pro">
+                  Tambah ke Keranjang
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 8 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card product-card h-100">
+            <div class="position-relative">
+              <div class="product-image">
+                <img src="https://via.placeholder.com/300x300?text=Wireless+Headphones" alt="Wireless Headphones Elite" class="img-fluid">
+              </div>
+              <span class="discount-badge">18% OFF</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title mb-0">Wireless Headphones Elite</h5>
+                <span class="badge bg-primary">Stok: 8</span>
+              </div>
+              <div class="star-rating mb-2 text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span class="text-muted ms-1">4.6</span>
+              </div>
+              <p class="card-text text-muted flex-grow-1">Headphone nirkabel dengan ANC dan baterai 30 jam.</p>
+              
+              <div class="features mb-3">
+                <h6 class="text-primary">Fitur:</h6>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-check-circle text-success me-2"></i>Active Noise Cancelling</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i>30hr Battery</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i>Bluetooth 5.0</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i>Built-in Mic</li>
+                </ul>
+              </div>
+              
+              <div class="mt-auto">
+                <p class="text-decoration-line-through text-muted mb-1">Rp 1,599,000</p>
+                <p class="price fw-bold">Rp 1,299,000</p>
+                <button class="btn btn-primary w-100 add-to-cart" data-id="2" data-name="Wireless Headphones Elite" data-price="1299000" data-img="https://via.placeholder.com/300x300?text=Wireless+Headphones">
+                  Tambah ke Keranjang
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 9 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card product-card h-100">
+            <div class="position-relative">
+              <div class="product-image">
+                <img src="https://via.placeholder.com/300x300?text=Smartwatch+Pro+3" alt="Smartwatch Pro 3" class="img-fluid">
+              </div>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title mb-0">Smartwatch Pro 3</h5>
+                <span class="badge bg-primary">Stok: 12</span>
+              </div>
+              <div class="star-rating mb-2 text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span class="text-muted ms-1">4.5</span>
+              </div>
+              <p class="card-text text-muted flex-grow-1">Smartwatch dengan monitor detak jantung dan GPS built-in.</p>
+              
+              <div class="features mb-3">
+                <h6 class="text-primary">Fitur:</h6>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-check-circle text-success me-2"></i>Heart Rate Monitor</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i>GPS Tracking</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i>7-day Battery</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i>Waterproof</li>
+                </ul>
+              </div>
+              
+              <div class="mt-auto">
+                <p class="price fw-bold">Rp 1,899,000</p>
+                <button class="btn btn-primary w-100 add-to-cart" data-id="3" data-name="Smartwatch Pro 3" data-price="1899000" data-img="https://via.placeholder.com/300x300?text=Smartwatch+Pro+3">
+                  Tambah ke Keranjang
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shopping-cart-section">
+      <div class="cart-header">
+        <h2 class="section-title">
+          <i class="fas fa-shopping-cart me-2"></i>Keranjang Belanja
+        </h2>
+        <button class="btn btn-sm btn-outline-danger" id="clear-cart">
+          <i class="fas fa-trash"></i> Kosongkan
+        </button>
+      </div>
+      
+      <div class="cart-container" id="cart">
+        <div class="empty-cart-message">
+          <i class="fas fa-shopping-basket"></i>
+          <p>Keranjang belanja Anda kosong</p>
+          <a href="#product-list" class="btn btn-primary">Lanjutkan Belanja</a>
+        </div>
+      </div>
+      
+      <div class="cart-summary" id="cart-summary"></div>
+    </section>
+
+    <section class="checkout-form-section">
+      <h2 class="section-title">
+        <i class="fas fa-credit-card me-2"></i>Informasi Pembayaran
+      </h2>
+      
+      <form id="checkout-form">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Nama Lengkap</label>
+              <input type="text" class="form-control" id="customer-name" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>Nomor Telepon/WhatsApp</label>
+              <input type="tel" class="form-control" id="customer-phone" required>
+            </div>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label>Alamat Lengkap</label>
+          <textarea class="form-control" id="customer-address" rows="3" required></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label>Metode Pengiriman</label>
+          <select id="shipping-method" class="form-select">
+            <option value="jne">JNE Regular - Rp 5.000 (3-5 hari kerja)</option>
+            <option value="sicepat">SiCepat BEST - Rp 7.000 (2-3 hari kerja)</option>
+            <option value="gosend">GoSend Instant - Rp 10.000 (1 hari kerja)</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label>Catatan Pesanan (Opsional)</label>
+          <textarea class="form-control" id="order-notes" rows="2" placeholder="Contoh: Warna produk, waktu pengiriman, dll."></textarea>
+        </div>
+        
+        <div class="order-summary" id="order-summary"></div>
+        
+        <div class="d-grid gap-2">
+          <button type="submit" class="btn btn-success btn-lg pay-btn">
+            <i class="fas fa-lock me-2"></i>Bayar Sekarang
+          </button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Order Confirmation Modal -->
+  <div class="modal fade" id="confirmationModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">
+            <i class="fas fa-check-circle text-success me-2"></i>Pesanan Berhasil!
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <div class="success-icon">
+            <i class="fas fa-check"></i>
+          </div>
+          <h4 class="mt-3">Terima kasih atas pesanan Anda!</h4>
+          <p>Kami telah menerima pesanan Anda dan akan segera memprosesnya.</p>
+          <div class="order-details">
+            <p id="estimated-delivery" class="mb-2"></p>
+            <p class="mb-0">Nomor pesanan: <strong>#ZFVI-<span id="order-number"></span></strong></p>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+            <i class="fas fa-home me-2"></i>Kembali ke Beranda
+          </button>
+          <a href="#" class="btn btn-outline-primary">
+            <i class="fas fa-file-alt me-2"></i>Lihat Invoice
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>ZFVI Elektronik</h5>
+          <p>Toko elektronik terpercaya dengan produk berkualitas dan harga terjangkau.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Kontak Kami</h5>
+          <ul class="footer-links">
+            <li><i class="fas fa-map-marker-alt me-2"></i> Jl. Elektronik No. 123, Jakarta</li>
+            <li><i class="fas fa-phone me-2"></i> (021) 12345678</li>
+            <li><i class="fab fa-whatsapp me-2"></i> +62 812 3456 7890</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Jam Operasional</h5>
+          <ul class="footer-links">
+            <li>Senin-Jumat: 08.00 - 17.00</li>
+            <li>Sabtu: 08.00 - 15.00</li>
+            <li>Minggu & Hari Besar: Tutup</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="text-center">
+        <p class="copyright">© 2023 ZFVI Elektronik. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Sistem Keranjang Belanja
+    document.addEventListener('DOMContentLoaded', function() {
+      // Inisialisasi keranjang dari localStorage jika ada
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      let orderHistory = JSON.parse(localStorage.getItem('orderHistory')) || [];
+      
+      // Fungsi untuk menyimpan keranjang ke localStorage
+      function saveCart() {
+        localStorage.setItem('cart', JSON.stringify(cart));
+        updateCartBadge();
+      }
+      
+      // Fungsi untuk update badge keranjang
+      function updateCartBadge() {
+        const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+        document.querySelector('.cart-badge').textContent = totalItems;
+      }
+      
+      // Fungsi untuk format mata uang
+      function formatCurrency(value) {
+        return new Intl.NumberFormat('id-ID', { 
+          style: 'currency', 
+          currency: 'IDR',
+          maximumFractionDigits: 0
+        }).format(value);
+      }
+      
+      // Fungsi untuk render keranjang
+      function renderCart() {
+        const cartContainer = document.getElementById('cart');
+        const cartSummary = document.getElementById('cart-summary');
+        const orderSummary = document.getElementById('order-summary');
+        
+        if (cart.length === 0) {
+          cartContainer.innerHTML = `
+            <div class="empty-cart-message">
+              <i class="fas fa-shopping-basket"></i>
+              <p>Keranjang belanja Anda kosong</p>
+              <a href="#product-list" class="btn btn-primary">Lanjutkan Belanja</a>
+            </div>
+          `;
+          cartSummary.innerHTML = '';
+          orderSummary.innerHTML = '';
+          return;
+        }
+        
+        // Render item keranjang
+        let cartHTML = '';
+        let subtotal = 0;
+        
+        cart.forEach((item, index) => {
+          const itemTotal = item.price * item.quantity;
+          subtotal += itemTotal;
+          
+          cartHTML += `
+            <div class="cart-item">
+              <div class="d-flex align-items-center">
+                <img src="${item.image}" alt="${item.name}" class="cart-item-image me-3">
+                <div class="cart-item-details">
+                  <h6 class="cart-item-title">${item.name}</h6>
+                  <p class="cart-item-price mb-2">${formatCurrency(item.price)}</p>
+                  <div class="cart-item-qty">
+                    <button class="btn btn-sm btn-outline-secondary decrease-qty" data-index="${index}">-</button>
+                    <input type="number" value="${item.quantity}" min="1" class="quantity-input form-control form-control-sm" data-index="${index}">
+                    <button class="btn btn-sm btn-outline-secondary increase-qty" data-index="${index}">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-item-actions">
+                <p class="cart-item-total">${formatCurrency(itemTotal)}</p>
+                <button class="btn btn-sm btn-danger remove-item" data-index="${index}">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </div>
+            </div>
+          `;
+        });
+        
+        cartContainer.innerHTML = cartHTML;
+        
+        // Hitung ongkos kirim
+        const shippingMethod = document.getElementById('shipping-method').value;
+        let shippingCost = 0;
+        
+        if (shippingMethod === 'jne') shippingCost = 5000;
+        else if (shippingMethod === 'sicepat') shippingCost = 7000;
+        else if (shippingMethod === 'gosend') shippingCost = 10000;
+        
+        const total = subtotal + shippingCost;
+        
+        // Render summary keranjang
+        cartSummary.innerHTML = `
+          <div class="summary-row">
+            <span>Subtotal:</span>
+            <span>${formatCurrency(subtotal)}</span>
+          </div>
+          <div class="summary-row">
+            <span>Ongkos Kirim:</span>
+            <span>${formatCurrency(shippingCost)}</span>
+          </div>
+          <div class="summary-row summary-total">
+            <span>Total:</span>
+            <span>${formatCurrency(total)}</span>
+          </div>
+        `;
+        
+        // Render order summary
+        orderSummary.innerHTML = `
+          <div class="summary-row">
+            <span>Subtotal Barang:</span>
+            <span>${formatCurrency(subtotal)}</span>
+          </div>
+          <div class="summary-row">
+            <span>Ongkos Kirim:</span>
+            <span>${formatCurrency(shippingCost)}</span>
+          </div>
+          <div class="summary-row summary-total">
+            <span>Total Pembayaran:</span>
+            <span>${formatCurrency(total)}</span>
+          </div>
+        `;
+        
+        // Tambahkan event listeners untuk tombol keranjang
+        document.querySelectorAll('.decrease-qty').forEach(btn => {
+          btn.addEventListener('click', function() {
+            const index = parseInt(this.getAttribute('data-index'));
+            updateQuantity(index, cart[index].quantity - 1);
+          });
+        });
+        
+        document.querySelectorAll('.increase-qty').forEach(btn => {
+          btn.addEventListener('click', function() {
+            const index = parseInt(this.getAttribute('data-index'));
+            updateQuantity(index, cart[index].quantity + 1);
+          });
+        });
+        
+        document.querySelectorAll('.quantity-input').forEach(input => {
+          input.addEventListener('change', function() {
+            const index = parseInt(this.getAttribute('data-index'));
+            const newQuantity = parseInt(this.value) || 1;
+            updateQuantity(index, newQuantity);
+          });
+        });
+        
+        document.querySelectorAll('.remove-item').forEach(btn => {
+          btn.addEventListener('click', function() {
+            const index = parseInt(this.getAttribute('data-index'));
+            removeFromCart(index);
+          });
+        });
+      }
+      
+      // Fungsi untuk update quantity item
+      function updateQuantity(index, newQuantity) {
+        if (newQuantity < 1) newQuantity = 1;
+        
+        cart[index].quantity = newQuantity;
+        saveCart();
+        renderCart();
+        showAlert(`Jumlah ${cart[index].name} diperbarui`, 'success');
+      }
+      
+            // Fungsi untuk hapus item dari keranjang
+      function removeFromCart(index) {
+        const removedItem = cart.splice(index, 1)[0];
+        saveCart();
+        renderCart();
+        showAlert(`${removedItem.name} dihapus dari keranjang`, 'info');
+      }
+      
+      // Fungsi untuk tambah item ke keranjang
+      function addToCart(productId, productName, productPrice, productImage) {
+        const existingItem = cart.find(item => item.id === productId);
+        
+        if (existingItem) {
+          existingItem.quantity += 1;
+        } else {
+          cart.push({
+            id: productId,
+            name: productName,
+            price: productPrice,
+            image: productImage,
+            quantity: 1
+          });
+        }
+        
+        saveCart();
+        renderCart();
+        showAlert(`${productName} ditambahkan ke keranjang`, 'success');
+      }
+      
+      // Fungsi untuk kosongkan keranjang
+      function clearCart() {
+        cart = [];
+        saveCart();
+        renderCart();
+        showAlert('Keranjang belanja telah dikosongkan', 'info');
+      }
+      
+      // Fungsi untuk menampilkan alert
+      function showAlert(message, type) {
+        const alert = document.createElement('div');
+        alert.className = `alert alert-${type} alert-dismissible fade show position-fixed`;
+        alert.style.top = '20px';
+        alert.style.right = '20px';
+        alert.style.zIndex = '1100';
+        alert.role = 'alert';
+        alert.innerHTML = `
+          ${message}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        `;
+        
+        document.body.appendChild(alert);
+        
+        setTimeout(() => {
+          alert.classList.remove('show');
+          setTimeout(() => alert.remove(), 150);
+        }, 3000);
+      }
+      
+      // Event listener untuk tombol "Tambah ke Keranjang"
+      document.querySelectorAll('.add-to-cart').forEach(button => {
+        button.addEventListener('click', function() {
+          const productId = this.getAttribute('data-id');
+          const productName = this.getAttribute('data-name');
+          const productPrice = parseInt(this.getAttribute('data-price'));
+          const productImage = this.getAttribute('data-img');
+          
+          addToCart(productId, productName, productPrice, productImage);
+        });
+      });
+      
+      // Event listener untuk tombol "Kosongkan Keranjang"
+      document.getElementById('clear-cart')?.addEventListener('click', clearCart);
+      
+      // Event listener untuk perubahan metode pengiriman
+      document.getElementById('shipping-method')?.addEventListener('change', renderCart);
+      
+      // Event listener untuk form checkout
+      document.getElementById('checkout-form')?.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        if (cart.length === 0) {
+          showAlert('Keranjang belanja Anda kosong', 'danger');
+          return;
+        }
+        
+        // Ambil data form
+        const customerName = document.getElementById('customer-name').value;
+        const customerPhone = document.getElementById('customer-phone').value;
+        const customerAddress = document.getElementById('customer-address').value;
+        const shippingMethod = document.getElementById('shipping-method').value;
+        const orderNotes = document.getElementById('order-notes').value;
+        
+        // Hitung total
+        const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+        let shippingCost = 0;
+        let deliveryTime = '';
+        
+        if (shippingMethod === 'jne') {
+          shippingCost = 5000;
+          deliveryTime = '3-5 hari kerja';
+        } else if (shippingMethod === 'sicepat') {
+          shippingCost = 7000;
+          deliveryTime = '2-3 hari kerja';
+        } else if (shippingMethod === 'gosend') {
+          shippingCost = 10000;
+          deliveryTime = '1 hari kerja';
+        }
+        
+        const total = subtotal + shippingCost;
+        
+        // Buat order
+        const orderNumber = 'ZFVI-' + Math.floor(Math.random() * 1000000);
+        const orderDate = new Date().toLocaleString('id-ID');
+        
+        const order = {
+          orderNumber,
+          orderDate,
+          customer: {
+            name: customerName,
+            phone: customerPhone,
+            address: customerAddress
+          },
+          shipping: {
+            method: shippingMethod,
+            cost: shippingCost,
+            estimatedDelivery: deliveryTime
+          },
+          items: [...cart],
+          subtotal,
+          total,
+          notes: orderNotes,
+          status: 'Diproses'
+        };
+        
+        // Simpan ke riwayat pesanan
+        orderHistory.unshift(order);
+        localStorage.setItem('orderHistory', JSON.stringify(orderHistory));
+        
+        // Tampilkan modal konfirmasi
+        document.getElementById('estimated-delivery').textContent = `Estimasi Pengiriman: ${deliveryTime}`;
+        document.getElementById('order-number').textContent = orderNumber;
+        
+        const modal = new bootstrap.Modal(document.getElementById('confirmationModal'));
+        modal.show();
+        
+        // Kosongkan keranjang dan form
+        clearCart();
+        this.reset();
+      });
+      
+      // Inisialisasi keranjang saat pertama kali load
+      updateCartBadge();
+      renderCart();
+    });
+  </script>
+</body>
+</html>
